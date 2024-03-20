@@ -3,7 +3,7 @@
 ## Install
 
 ```
-git clone https://github.com/ashikck/react-vite-preline-example
+git clone https://github.com/yahyamourid/blogApp
 
 ```
 
