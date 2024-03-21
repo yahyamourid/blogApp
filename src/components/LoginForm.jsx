@@ -52,7 +52,7 @@ const LoginForm = () => {
                 </div>
                 <div className="mb-4 w-3/5">
                     <label htmlFor="password" className="flex flex-col text-sm text-black mb-1 font-medium tracking-wider">Mot de passe</label>
-                    <input id="password" type="password" value={user.password} onChange={handleChange}
+                    <input id="password" type="password" value={user.password} onChange={handleChange} placeholder='Entrer le mot de passe'
                         className="text-black font-normal w-full text-sm bg-white border border-opacity-20 border-gray-500 hover:bg-gray-300 rounded-lg px-4 py-2 duration-300 focus:outline-none focus:border-opacity-35 focus:bg-gray-300" />
                 </div>
                 <button type="submit" className={`mt-3 w-3/5 ${loading ? 'bg-gray-500 cursor-not-allowed' : 'bg-black hover:bg-gray-800'} text-white tracking-widest border border-opacity-20 border-gray-500 rounded-lg px-4 py-1.5 duration-300`} disabled={loading}>

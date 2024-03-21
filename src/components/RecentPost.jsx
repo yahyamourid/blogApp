@@ -91,10 +91,10 @@ const RecentPost = () => {
             </div>
             <div className='flex justify-center gap-4'>
                 <button className=" text-black py-1 px-2" onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>
-                    Previous
+                Précédent
                 </button>
                 <button className="bg-black text-white py-1 px-5" onClick={() => paginate(currentPage + 1)} disabled={indexOfLastPost >= posts.length}>
-                    Next
+                    Suivant
                 </button>
             </div>
         </div>

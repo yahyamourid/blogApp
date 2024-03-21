@@ -66,19 +66,19 @@ const ManageCategories = () => {
 
   return (
     <div className="flex w-full justify-center py-12">
-      <div className="flex flex-col items-center w-3/4 shadow-lg rounded-lg border border-opacity-40 border-gray-600">
-        <h2 className="text-2xl font-semibold mb-8">Gestion des Catégories</h2>
-        <div className="mb-4 w-full flex justify-center items-center">
+      <div className="flex flex-col items-center w-3/5 rounded-lg ">
+        <h2 className="text-3xl font-semibold mb-12">Gestion des Catégories</h2>
+        <div className="mb-4 w-3/5  flex justify-between items-center">
           <input
             type="text"
             placeholder="Nouvelle Catégorie"
             value={newCategory}
             onChange={(e) => setNewCategory(e.target.value)}
-            className="border border-gray-300 rounded-md py-1 px-3 mr-2"
+            className="border border-gray-300 rounded-md py-1 px-3 mr-2 w-3/4"
           />
           <button
             onClick={selectedCategory !== null ? editCategory : addCategory}
-            className="bg-black text-white py-1 px-4 rounded-xl"
+            className="bg-black text-white py-1 px-4 rounded-xl w-1/4"
           >
             {selectedCategory !== null ? 'Modifier' : 'Ajouter'}
           </button>
